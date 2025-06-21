@@ -1,5 +1,4 @@
 # A Soft Robotic Actuator Framework
----
 ## Overview
 This repository contains a complete, parametric workflow for creating, simulating, and analysing multi-segment soft robotic actuators.  The system couples
 1. **Geometry generation** – continuous arc splines that describe the desired neutral shape;
