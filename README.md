@@ -1,33 +1,35 @@
-# A Soft Robotic Actuator Framework (Under Development)
+# A Soft Robotic Actuator Framework
 A modular simulation framework for modeling soft robotic actuators using MuJoCo.  
 This project focuses on segment-wise stiffness modulation to shape a soft structure in response to internal actuation. The framework includes automatic MuJoCo XML generation, geometry modeling via arc splines, and simulation tools for control and visualization.
+**⚠️ Note:** This project is currently under active development. Features, APIs, and structure may change.
+---
+
+## Overview
+
+This repository contains a complete, parametric workflow for creating, simulating, and analysing multi-segment soft robotic actuators.  The system couples
+1. **Geometry generation** – continuous arc splines that describe the desired neutral shape;
+2. **Automatic model synthesis** – procedural generation of MuJoCo XML files with bodies, springs, tendons, and actuators; and
+3. **Physics-based simulation** – a Python wrapper that steps, visualises, and probes the resulting model in real time.
 
 ---
 
-## 🔧 Features
+## Key Features
 
-- Procedural generation of multi-segment soft actuators
-- Stiffness modulation via rim-to-rim spring configuration
-- XML generation for MuJoCo-compatible models
-- Arc spline-based geometry (C¹-continuous chains of circular arcs)
-- Tendon-based actuation
-- Live simulation and rendering using MuJoCo
----
-
-## 🧱 Project Structure
-
-| `Actuator.py` | Main simulation class. Handles MuJoCo setup, stepping, visualization, and forces. |
-| `xmlMake.py` | Programmatically builds the actuator model in MuJoCo XML format. |
-| `arcSpline.py` | Defines the arc spline geometry used to model ideal actuator paths. |
-| `Demonstration.ipynb` | Example notebook: builds an actuator, sets stiffness, simulates motion, and renders the result. |
-| `README.md` | Project documentation. |
+- **Segment-wise stiffness control** (rim-to-rim linear springs elements)
+- **Arc-spline geometry** with \(C^1\) continuity
+- **Fully procedural MuJoCo XML generation**
+- **Headless or on-screen rendering**
 
 ---
 
-## 📐 Core Concept
+## Repository Structure
 
-This project explores how **stiffness modulation**—without direct control—can be used to shape soft structures. The actuator consists of rigid disks connected by springs, with actuation applied via tendons. By tuning the **stiffness pattern** along the structure, desired deformations can be achieved.
-
-Target shapes are defined using arc splines, and future work will include optimization algorithms to automatically match actuator shape to arbitrary target curves.
+| Path                  | Description                                                 |
+| --------------------- | ----------------------------------------------------------- |
+| `Actuator.py`         | High-level simulation wrapper (load, reset, step, render).  |
+| `arcSpline.py`        | Arc-segment and spline utilities (geometry backbone).       |
+| `xmlMake.py`          | Functions that build the MuJoCo XML model programmatically. |
+| `Demonstration.ipynb` | End-to-end notebook: generate model → simulate → visualise. |
+| `README.md`           | Project documentation (this file).                          |
 
 ---
