@@ -1,5 +1,5 @@
 # A Soft Robotic Actuator Framework
-
+---
 A modular simulation framework for modeling soft robotic actuators using MuJoCo.  
 This project focuses on segment-wise stiffness modulation to shape a soft structure in response to internal actuation. The framework includes automatic MuJoCo XML generation, geometry modeling via arc splines, and simulation tools for control and visualization.
 **⚠️ Note:** This project is currently under active development. Features, APIs, and structure may change.
