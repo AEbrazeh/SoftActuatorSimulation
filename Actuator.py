@@ -12,37 +12,19 @@ def length(x, r, theta, phi, psi):
                    -2 * r * x * np.sin(phi) * np.cos(psi)
                    +2 * r * x * np.sin(psi) * np.sin(theta) * np.cos(phi)
                    +x**2)
-    
-def pose2angles(position, orientation, N):
-    # Step 1: Get rotation vector
-    rotvec = R.from_matrix(orientation).as_rotvec()
-    beta = np.linalg.norm(rotvec)
-    
-    # Handle edge case: no rotation (flat)
-    if beta < 1e-9:
-        return np.array([0.0, 0.0, np.linalg.norm(position) / (N-1)])
-    
-    n = rotvec / beta
-    
-    # Step 2: Extract bending direction in YZ plane
-    ny = n[1]
-    nz = n[2]
-    alpha = np.arctan2(ny, nz)
-    
-    # Step 3: Radius
-    radius = np.linalg.norm(position) / (2 * np.sin(beta / 2))
-    
-    # Step 4: Arc parameters
-    delta = radius * beta / (N - 1)
-    theta = beta * np.sin(alpha) / (N - 1)
-    phi = beta * np.cos(alpha) / (N - 1)
 
+def pose2angles(params, N):
+    l, beta, alpha = params
+    
+    delta = l / (N - 1)
+    theta = -beta * np.sin(alpha) / (N - 1)
+    phi = beta * np.cos(alpha) / (N - 1)
     return np.array([theta, phi, delta])
 
     
-def calculateStiffness(Position1, Orientation1, x0, x01, x02, x03, k, F, N, r):
+def calculateStiffness(params, x0, x01, x02, x03, k, F, N, r):
     
-    theta, phi, x = pose2angles(Position1, Orientation1, N)
+    theta, phi, x = pose2angles(params, N)
         
     l1 = length(x, r, theta, phi, 0)
     l2 = length(x, r, theta, phi, 2 * np.pi / 3)

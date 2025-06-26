@@ -11,7 +11,7 @@ def createSegment(name, nSegments, L, r, N, innerStiffness, innerDamping, outerS
     vis = ET.SubElement(root, 'visual')
     ET.SubElement(vis, 'global', offwidth="4096", offheight='4096')
     wb = ET.SubElement(root, 'worldbody')
-    ET.SubElement(wb, 'camera', pos='{} 0 1.5'.format(L/2), name = 'mainCamera', euler='0 0 0')
+    ET.SubElement(wb, 'camera', pos='{} 0 2'.format(L/2), name = 'mainCamera', euler='0 0 0')
     
     part = ET.SubElement(wb, 'body', name = 'B{:02d}'.format(0), pos = '{} 0 0'.format(0))
     #ET.SubElement(part, 'joint', pos = '0 0 0', type='hinge', axis='1 0 0')
