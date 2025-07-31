@@ -1,0 +1,1656 @@
+<?xml version="1.0" ?>
+<mujoco model="softActuator.xml">
+	<option timestep="0.01" integrator="implicitfast" gravity="0 0 0">
+		<flag energy="enable"/>
+	</option>
+	<visual>
+		<global offwidth="4096" offheight="4096"/>
+	</visual>
+	<worldbody>
+		<camera name="mainCamera" pos="0.15 0.0 2" euler="0.0 0.0 0.0"/>
+		<body name="A00B00" pos="0 0 0">
+			<geom name="A00G00" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.4 0.4 0.4 1" euler="0 90 0"/>
+			<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+			<site name="A00B00S00C" size="0.0001" pos="0 0 0"/>
+			<site name="A00B00S01C" size="0.0001" pos="0 0.025 0.0"/>
+			<site name="A00B00S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+			<site name="A00B00S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+			<body name="A00B01" pos="0.006666666666666666 0 0">
+				<geom name="A00G01" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+				<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+				<site name="A00B01S00C" size="0.0001" pos="0 0 0"/>
+				<site name="A00B01S01C" size="0.0001" pos="0 0.025 0.0"/>
+				<site name="A00B01S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+				<site name="A00B01S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+				<joint name="A00R01y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+				<joint name="A00R01z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+				<joint name="A00P01x" pos="0 0 0" type="slide" axis="1 0 0"/>
+				<body name="A00B02" pos="0.006666666666666666 0 0">
+					<geom name="A00G02" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+					<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+					<site name="A00B02S00C" size="0.0001" pos="0 0 0"/>
+					<site name="A00B02S01C" size="0.0001" pos="0 0.025 0.0"/>
+					<site name="A00B02S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+					<site name="A00B02S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+					<joint name="A00R02y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+					<joint name="A00R02z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+					<joint name="A00P02x" pos="0 0 0" type="slide" axis="1 0 0"/>
+					<body name="A00B03" pos="0.006666666666666666 0 0">
+						<geom name="A00G03" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+						<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+						<site name="A00B03S00C" size="0.0001" pos="0 0 0"/>
+						<site name="A00B03S01C" size="0.0001" pos="0 0.025 0.0"/>
+						<site name="A00B03S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+						<site name="A00B03S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+						<joint name="A00R03y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+						<joint name="A00R03z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+						<joint name="A00P03x" pos="0 0 0" type="slide" axis="1 0 0"/>
+						<body name="A00B04" pos="0.006666666666666666 0 0">
+							<geom name="A00G04" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+							<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+							<site name="A00B04S00C" size="0.0001" pos="0 0 0"/>
+							<site name="A00B04S01C" size="0.0001" pos="0 0.025 0.0"/>
+							<site name="A00B04S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+							<site name="A00B04S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+							<joint name="A00R04y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+							<joint name="A00R04z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+							<joint name="A00P04x" pos="0 0 0" type="slide" axis="1 0 0"/>
+							<body name="A00B05" pos="0.006666666666666666 0 0">
+								<geom name="A00G05" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+								<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+								<site name="A00B05S00C" size="0.0001" pos="0 0 0"/>
+								<site name="A00B05S01C" size="0.0001" pos="0 0.025 0.0"/>
+								<site name="A00B05S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+								<site name="A00B05S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+								<joint name="A00R05y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+								<joint name="A00R05z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+								<joint name="A00P05x" pos="0 0 0" type="slide" axis="1 0 0"/>
+								<body name="A00B06" pos="0.006666666666666666 0 0">
+									<geom name="A00G06" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+									<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+									<site name="A00B06S00C" size="0.0001" pos="0 0 0"/>
+									<site name="A00B06S01C" size="0.0001" pos="0 0.025 0.0"/>
+									<site name="A00B06S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+									<site name="A00B06S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+									<joint name="A00R06y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+									<joint name="A00R06z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+									<joint name="A00P06x" pos="0 0 0" type="slide" axis="1 0 0"/>
+									<body name="A00B07" pos="0.006666666666666666 0 0">
+										<geom name="A00G07" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+										<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+										<site name="A00B07S00C" size="0.0001" pos="0 0 0"/>
+										<site name="A00B07S01C" size="0.0001" pos="0 0.025 0.0"/>
+										<site name="A00B07S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+										<site name="A00B07S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+										<joint name="A00R07y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+										<joint name="A00R07z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+										<joint name="A00P07x" pos="0 0 0" type="slide" axis="1 0 0"/>
+										<body name="A00B08" pos="0.006666666666666666 0 0">
+											<geom name="A00G08" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+											<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+											<site name="A00B08S00C" size="0.0001" pos="0 0 0"/>
+											<site name="A00B08S01C" size="0.0001" pos="0 0.025 0.0"/>
+											<site name="A00B08S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+											<site name="A00B08S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+											<joint name="A00R08y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+											<joint name="A00R08z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+											<joint name="A00P08x" pos="0 0 0" type="slide" axis="1 0 0"/>
+											<body name="A00B09" pos="0.006666666666666666 0 0">
+												<geom name="A00G09" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+												<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+												<site name="A00B09S00C" size="0.0001" pos="0 0 0"/>
+												<site name="A00B09S01C" size="0.0001" pos="0 0.025 0.0"/>
+												<site name="A00B09S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+												<site name="A00B09S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+												<joint name="A00R09y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+												<joint name="A00R09z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+												<joint name="A00P09x" pos="0 0 0" type="slide" axis="1 0 0"/>
+												<body name="A00B10" pos="0.006666666666666666 0 0">
+													<geom name="A00G10" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+													<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+													<site name="A00B10S00C" size="0.0001" pos="0 0 0"/>
+													<site name="A00B10S01C" size="0.0001" pos="0 0.025 0.0"/>
+													<site name="A00B10S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+													<site name="A00B10S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+													<joint name="A00R10y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+													<joint name="A00R10z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+													<joint name="A00P10x" pos="0 0 0" type="slide" axis="1 0 0"/>
+													<body name="A00B11" pos="0.006666666666666666 0 0">
+														<geom name="A00G11" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+														<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+														<site name="A00B11S00C" size="0.0001" pos="0 0 0"/>
+														<site name="A00B11S01C" size="0.0001" pos="0 0.025 0.0"/>
+														<site name="A00B11S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+														<site name="A00B11S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+														<joint name="A00R11y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+														<joint name="A00R11z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+														<joint name="A00P11x" pos="0 0 0" type="slide" axis="1 0 0"/>
+														<body name="A00B12" pos="0.006666666666666666 0 0">
+															<geom name="A00G12" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+															<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+															<site name="A00B12S00C" size="0.0001" pos="0 0 0"/>
+															<site name="A00B12S01C" size="0.0001" pos="0 0.025 0.0"/>
+															<site name="A00B12S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+															<site name="A00B12S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+															<joint name="A00R12y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+															<joint name="A00R12z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+															<joint name="A00P12x" pos="0 0 0" type="slide" axis="1 0 0"/>
+															<body name="A00B13" pos="0.006666666666666666 0 0">
+																<geom name="A00G13" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																<site name="A00B13S00C" size="0.0001" pos="0 0 0"/>
+																<site name="A00B13S01C" size="0.0001" pos="0 0.025 0.0"/>
+																<site name="A00B13S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																<site name="A00B13S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																<joint name="A00R13y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																<joint name="A00R13z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																<joint name="A00P13x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																<body name="A00B14" pos="0.006666666666666666 0 0">
+																	<geom name="A00G14" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																	<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																	<site name="A00B14S00C" size="0.0001" pos="0 0 0"/>
+																	<site name="A00B14S01C" size="0.0001" pos="0 0.025 0.0"/>
+																	<site name="A00B14S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																	<site name="A00B14S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																	<joint name="A00R14y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																	<joint name="A00R14z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																	<joint name="A00P14x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																	<body name="A01B00" pos="0.006666666666666666 0 0">
+																		<geom name="A01G00" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.4 0.4 0.4 1" euler="0 90 0"/>
+																		<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																		<site name="A01B00S00C" size="0.0001" pos="0 0 0"/>
+																		<site name="A01B00S01C" size="0.0001" pos="0 0.025 0.0"/>
+																		<site name="A01B00S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																		<site name="A01B00S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																		<joint name="A01R00y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																		<joint name="A01R00z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																		<joint name="A01P00x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																		<body name="A01B01" pos="0.006666666666666666 0 0">
+																			<geom name="A01G01" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																			<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																			<site name="A01B01S00C" size="0.0001" pos="0 0 0"/>
+																			<site name="A01B01S01C" size="0.0001" pos="0 0.025 0.0"/>
+																			<site name="A01B01S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																			<site name="A01B01S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																			<joint name="A01R01y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																			<joint name="A01R01z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																			<joint name="A01P01x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																			<body name="A01B02" pos="0.006666666666666666 0 0">
+																				<geom name="A01G02" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																				<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																				<site name="A01B02S00C" size="0.0001" pos="0 0 0"/>
+																				<site name="A01B02S01C" size="0.0001" pos="0 0.025 0.0"/>
+																				<site name="A01B02S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																				<site name="A01B02S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																				<joint name="A01R02y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																				<joint name="A01R02z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																				<joint name="A01P02x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																				<body name="A01B03" pos="0.006666666666666666 0 0">
+																					<geom name="A01G03" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																					<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																					<site name="A01B03S00C" size="0.0001" pos="0 0 0"/>
+																					<site name="A01B03S01C" size="0.0001" pos="0 0.025 0.0"/>
+																					<site name="A01B03S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																					<site name="A01B03S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																					<joint name="A01R03y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																					<joint name="A01R03z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																					<joint name="A01P03x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																					<body name="A01B04" pos="0.006666666666666666 0 0">
+																						<geom name="A01G04" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																						<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																						<site name="A01B04S00C" size="0.0001" pos="0 0 0"/>
+																						<site name="A01B04S01C" size="0.0001" pos="0 0.025 0.0"/>
+																						<site name="A01B04S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																						<site name="A01B04S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																						<joint name="A01R04y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																						<joint name="A01R04z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																						<joint name="A01P04x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																						<body name="A01B05" pos="0.006666666666666666 0 0">
+																							<geom name="A01G05" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																							<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																							<site name="A01B05S00C" size="0.0001" pos="0 0 0"/>
+																							<site name="A01B05S01C" size="0.0001" pos="0 0.025 0.0"/>
+																							<site name="A01B05S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																							<site name="A01B05S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																							<joint name="A01R05y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																							<joint name="A01R05z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																							<joint name="A01P05x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																							<body name="A01B06" pos="0.006666666666666666 0 0">
+																								<geom name="A01G06" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																								<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																								<site name="A01B06S00C" size="0.0001" pos="0 0 0"/>
+																								<site name="A01B06S01C" size="0.0001" pos="0 0.025 0.0"/>
+																								<site name="A01B06S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																								<site name="A01B06S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																								<joint name="A01R06y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																								<joint name="A01R06z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																								<joint name="A01P06x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																								<body name="A01B07" pos="0.006666666666666666 0 0">
+																									<geom name="A01G07" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																									<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																									<site name="A01B07S00C" size="0.0001" pos="0 0 0"/>
+																									<site name="A01B07S01C" size="0.0001" pos="0 0.025 0.0"/>
+																									<site name="A01B07S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																									<site name="A01B07S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																									<joint name="A01R07y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																									<joint name="A01R07z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																									<joint name="A01P07x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																									<body name="A01B08" pos="0.006666666666666666 0 0">
+																										<geom name="A01G08" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																										<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																										<site name="A01B08S00C" size="0.0001" pos="0 0 0"/>
+																										<site name="A01B08S01C" size="0.0001" pos="0 0.025 0.0"/>
+																										<site name="A01B08S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																										<site name="A01B08S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																										<joint name="A01R08y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																										<joint name="A01R08z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																										<joint name="A01P08x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																										<body name="A01B09" pos="0.006666666666666666 0 0">
+																											<geom name="A01G09" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																											<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																											<site name="A01B09S00C" size="0.0001" pos="0 0 0"/>
+																											<site name="A01B09S01C" size="0.0001" pos="0 0.025 0.0"/>
+																											<site name="A01B09S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																											<site name="A01B09S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																											<joint name="A01R09y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																											<joint name="A01R09z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																											<joint name="A01P09x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																											<body name="A01B10" pos="0.006666666666666666 0 0">
+																												<geom name="A01G10" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																												<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																												<site name="A01B10S00C" size="0.0001" pos="0 0 0"/>
+																												<site name="A01B10S01C" size="0.0001" pos="0 0.025 0.0"/>
+																												<site name="A01B10S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																												<site name="A01B10S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																												<joint name="A01R10y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																												<joint name="A01R10z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																												<joint name="A01P10x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																												<body name="A01B11" pos="0.006666666666666666 0 0">
+																													<geom name="A01G11" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																													<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																													<site name="A01B11S00C" size="0.0001" pos="0 0 0"/>
+																													<site name="A01B11S01C" size="0.0001" pos="0 0.025 0.0"/>
+																													<site name="A01B11S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																													<site name="A01B11S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																													<joint name="A01R11y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																													<joint name="A01R11z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																													<joint name="A01P11x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																													<body name="A01B12" pos="0.006666666666666666 0 0">
+																														<geom name="A01G12" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																														<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																														<site name="A01B12S00C" size="0.0001" pos="0 0 0"/>
+																														<site name="A01B12S01C" size="0.0001" pos="0 0.025 0.0"/>
+																														<site name="A01B12S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																														<site name="A01B12S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																														<joint name="A01R12y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																														<joint name="A01R12z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																														<joint name="A01P12x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																														<body name="A01B13" pos="0.006666666666666666 0 0">
+																															<geom name="A01G13" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																															<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																															<site name="A01B13S00C" size="0.0001" pos="0 0 0"/>
+																															<site name="A01B13S01C" size="0.0001" pos="0 0.025 0.0"/>
+																															<site name="A01B13S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																															<site name="A01B13S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																															<joint name="A01R13y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																															<joint name="A01R13z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																															<joint name="A01P13x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																															<body name="A01B14" pos="0.006666666666666666 0 0">
+																																<geom name="A01G14" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																<site name="A01B14S00C" size="0.0001" pos="0 0 0"/>
+																																<site name="A01B14S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																<site name="A01B14S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																<site name="A01B14S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																<joint name="A01R14y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																<joint name="A01R14z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																<joint name="A01P14x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																<body name="A02B00" pos="0.006666666666666666 0 0">
+																																	<geom name="A02G00" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.4 0.4 0.4 1" euler="0 90 0"/>
+																																	<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																	<site name="A02B00S00C" size="0.0001" pos="0 0 0"/>
+																																	<site name="A02B00S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																	<site name="A02B00S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																	<site name="A02B00S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																	<joint name="A02R00y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																	<joint name="A02R00z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																	<joint name="A02P00x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																	<body name="A02B01" pos="0.006666666666666666 0 0">
+																																		<geom name="A02G01" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																		<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																		<site name="A02B01S00C" size="0.0001" pos="0 0 0"/>
+																																		<site name="A02B01S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																		<site name="A02B01S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																		<site name="A02B01S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																		<joint name="A02R01y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																		<joint name="A02R01z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																		<joint name="A02P01x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																		<body name="A02B02" pos="0.006666666666666666 0 0">
+																																			<geom name="A02G02" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																			<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																			<site name="A02B02S00C" size="0.0001" pos="0 0 0"/>
+																																			<site name="A02B02S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																			<site name="A02B02S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																			<site name="A02B02S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																			<joint name="A02R02y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																			<joint name="A02R02z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																			<joint name="A02P02x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																			<body name="A02B03" pos="0.006666666666666666 0 0">
+																																				<geom name="A02G03" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																				<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																				<site name="A02B03S00C" size="0.0001" pos="0 0 0"/>
+																																				<site name="A02B03S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																				<site name="A02B03S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																				<site name="A02B03S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																				<joint name="A02R03y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																				<joint name="A02R03z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																				<joint name="A02P03x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																				<body name="A02B04" pos="0.006666666666666666 0 0">
+																																					<geom name="A02G04" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																					<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																					<site name="A02B04S00C" size="0.0001" pos="0 0 0"/>
+																																					<site name="A02B04S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																					<site name="A02B04S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																					<site name="A02B04S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																					<joint name="A02R04y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																					<joint name="A02R04z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																					<joint name="A02P04x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																					<body name="A02B05" pos="0.006666666666666666 0 0">
+																																						<geom name="A02G05" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																						<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																						<site name="A02B05S00C" size="0.0001" pos="0 0 0"/>
+																																						<site name="A02B05S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																						<site name="A02B05S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																						<site name="A02B05S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																						<joint name="A02R05y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																						<joint name="A02R05z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																						<joint name="A02P05x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																						<body name="A02B06" pos="0.006666666666666666 0 0">
+																																							<geom name="A02G06" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																							<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																							<site name="A02B06S00C" size="0.0001" pos="0 0 0"/>
+																																							<site name="A02B06S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																							<site name="A02B06S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																							<site name="A02B06S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																							<joint name="A02R06y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																							<joint name="A02R06z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																							<joint name="A02P06x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																							<body name="A02B07" pos="0.006666666666666666 0 0">
+																																								<geom name="A02G07" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																								<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																								<site name="A02B07S00C" size="0.0001" pos="0 0 0"/>
+																																								<site name="A02B07S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																								<site name="A02B07S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																								<site name="A02B07S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																								<joint name="A02R07y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																								<joint name="A02R07z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																								<joint name="A02P07x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																								<body name="A02B08" pos="0.006666666666666666 0 0">
+																																									<geom name="A02G08" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																									<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																									<site name="A02B08S00C" size="0.0001" pos="0 0 0"/>
+																																									<site name="A02B08S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																									<site name="A02B08S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																									<site name="A02B08S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																									<joint name="A02R08y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																									<joint name="A02R08z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																									<joint name="A02P08x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																									<body name="A02B09" pos="0.006666666666666666 0 0">
+																																										<geom name="A02G09" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																										<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																										<site name="A02B09S00C" size="0.0001" pos="0 0 0"/>
+																																										<site name="A02B09S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																										<site name="A02B09S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																										<site name="A02B09S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																										<joint name="A02R09y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																										<joint name="A02R09z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																										<joint name="A02P09x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																										<body name="A02B10" pos="0.006666666666666666 0 0">
+																																											<geom name="A02G10" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																											<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																											<site name="A02B10S00C" size="0.0001" pos="0 0 0"/>
+																																											<site name="A02B10S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																											<site name="A02B10S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																											<site name="A02B10S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																											<joint name="A02R10y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																											<joint name="A02R10z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																											<joint name="A02P10x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																											<body name="A02B11" pos="0.006666666666666666 0 0">
+																																												<geom name="A02G11" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																												<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																												<site name="A02B11S00C" size="0.0001" pos="0 0 0"/>
+																																												<site name="A02B11S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																												<site name="A02B11S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																												<site name="A02B11S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																												<joint name="A02R11y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																												<joint name="A02R11z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																												<joint name="A02P11x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																												<body name="A02B12" pos="0.006666666666666666 0 0">
+																																													<geom name="A02G12" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																													<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																													<site name="A02B12S00C" size="0.0001" pos="0 0 0"/>
+																																													<site name="A02B12S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																													<site name="A02B12S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																													<site name="A02B12S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																													<joint name="A02R12y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																													<joint name="A02R12z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																													<joint name="A02P12x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																													<body name="A02B13" pos="0.006666666666666666 0 0">
+																																														<geom name="A02G13" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																														<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																														<site name="A02B13S00C" size="0.0001" pos="0 0 0"/>
+																																														<site name="A02B13S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																														<site name="A02B13S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																														<site name="A02B13S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																														<joint name="A02R13y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																														<joint name="A02R13z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																														<joint name="A02P13x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																														<body name="A02B14" pos="0.006666666666666666 0 0">
+																																															<geom name="A02G14" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																															<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																															<site name="A02B14S00C" size="0.0001" pos="0 0 0"/>
+																																															<site name="A02B14S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																															<site name="A02B14S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																															<site name="A02B14S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																															<joint name="A02R14y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																															<joint name="A02R14z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																															<joint name="A02P14x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																															<body name="A02B15" pos="0.006666666666666666 0 0">
+																																																<geom name="A02G15" type="cylinder" size="0.025 0.0016666666666666666" rgba="0.8 0.8 0.8 1" euler="0 90 0"/>
+																																																<inertial pos="0 0 0" mass="0.002173913043478261" diaginertia="3.416867954911433e-07 3.416867954911433e-07 6.793478260869567e-07"/>
+																																																<site name="A02B15S00C" size="0.0001" pos="0 0 0"/>
+																																																<site name="A02B15S01C" size="0.0001" pos="0 0.025 0.0"/>
+																																																<site name="A02B15S02C" size="0.0001" pos="0 -0.0125 0.0216506350946"/>
+																																																<site name="A02B15S03C" size="0.0001" pos="0 -0.0125 -0.0216506350946"/>
+																																																<joint name="A02R15y" pos="0 0 0" type="hinge" axis="0 1 0"/>
+																																																<joint name="A02R15z" pos="0 0 0" type="hinge" axis="0 0 1"/>
+																																																<joint name="A02P15x" pos="0 0 0" type="slide" axis="1 0 0"/>
+																																															</body>
+																																														</body>
+																																													</body>
+																																												</body>
+																																											</body>
+																																										</body>
+																																									</body>
+																																								</body>
+																																							</body>
+																																						</body>
+																																					</body>
+																																				</body>
+																																			</body>
+																																		</body>
+																																	</body>
+																																</body>
+																															</body>
+																														</body>
+																													</body>
+																												</body>
+																											</body>
+																										</body>
+																									</body>
+																								</body>
+																							</body>
+																						</body>
+																					</body>
+																				</body>
+																			</body>
+																		</body>
+																	</body>
+																</body>
+															</body>
+														</body>
+													</body>
+												</body>
+											</body>
+										</body>
+									</body>
+								</body>
+							</body>
+						</body>
+					</body>
+				</body>
+			</body>
+		</body>
+	</worldbody>
+	<tendon>
+		<spatial name="A00B00T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S01C"/>
+			<site site="A00B01S01C"/>
+		</spatial>
+		<spatial name="A00B01T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B01S01C"/>
+			<site site="A00B02S01C"/>
+		</spatial>
+		<spatial name="A00B02T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B02S01C"/>
+			<site site="A00B03S01C"/>
+		</spatial>
+		<spatial name="A00B03T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B03S01C"/>
+			<site site="A00B04S01C"/>
+		</spatial>
+		<spatial name="A00B04T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B04S01C"/>
+			<site site="A00B05S01C"/>
+		</spatial>
+		<spatial name="A00B05T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B05S01C"/>
+			<site site="A00B06S01C"/>
+		</spatial>
+		<spatial name="A00B06T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B06S01C"/>
+			<site site="A00B07S01C"/>
+		</spatial>
+		<spatial name="A00B07T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B07S01C"/>
+			<site site="A00B08S01C"/>
+		</spatial>
+		<spatial name="A00B08T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B08S01C"/>
+			<site site="A00B09S01C"/>
+		</spatial>
+		<spatial name="A00B09T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B09S01C"/>
+			<site site="A00B10S01C"/>
+		</spatial>
+		<spatial name="A00B10T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B10S01C"/>
+			<site site="A00B11S01C"/>
+		</spatial>
+		<spatial name="A00B11T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B11S01C"/>
+			<site site="A00B12S01C"/>
+		</spatial>
+		<spatial name="A00B12T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B12S01C"/>
+			<site site="A00B13S01C"/>
+		</spatial>
+		<spatial name="A00B13T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B13S01C"/>
+			<site site="A00B14S01C"/>
+		</spatial>
+		<spatial name="A00B14T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B14S01C"/>
+			<site site="A01B00S01C"/>
+		</spatial>
+		<spatial name="A00B00T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S02C"/>
+			<site site="A00B01S02C"/>
+		</spatial>
+		<spatial name="A00B01T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B01S02C"/>
+			<site site="A00B02S02C"/>
+		</spatial>
+		<spatial name="A00B02T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B02S02C"/>
+			<site site="A00B03S02C"/>
+		</spatial>
+		<spatial name="A00B03T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B03S02C"/>
+			<site site="A00B04S02C"/>
+		</spatial>
+		<spatial name="A00B04T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B04S02C"/>
+			<site site="A00B05S02C"/>
+		</spatial>
+		<spatial name="A00B05T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B05S02C"/>
+			<site site="A00B06S02C"/>
+		</spatial>
+		<spatial name="A00B06T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B06S02C"/>
+			<site site="A00B07S02C"/>
+		</spatial>
+		<spatial name="A00B07T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B07S02C"/>
+			<site site="A00B08S02C"/>
+		</spatial>
+		<spatial name="A00B08T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B08S02C"/>
+			<site site="A00B09S02C"/>
+		</spatial>
+		<spatial name="A00B09T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B09S02C"/>
+			<site site="A00B10S02C"/>
+		</spatial>
+		<spatial name="A00B10T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B10S02C"/>
+			<site site="A00B11S02C"/>
+		</spatial>
+		<spatial name="A00B11T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B11S02C"/>
+			<site site="A00B12S02C"/>
+		</spatial>
+		<spatial name="A00B12T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B12S02C"/>
+			<site site="A00B13S02C"/>
+		</spatial>
+		<spatial name="A00B13T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B13S02C"/>
+			<site site="A00B14S02C"/>
+		</spatial>
+		<spatial name="A00B14T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B14S02C"/>
+			<site site="A01B00S02C"/>
+		</spatial>
+		<spatial name="A00B00T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S03C"/>
+			<site site="A00B01S03C"/>
+		</spatial>
+		<spatial name="A00B01T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B01S03C"/>
+			<site site="A00B02S03C"/>
+		</spatial>
+		<spatial name="A00B02T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B02S03C"/>
+			<site site="A00B03S03C"/>
+		</spatial>
+		<spatial name="A00B03T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B03S03C"/>
+			<site site="A00B04S03C"/>
+		</spatial>
+		<spatial name="A00B04T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B04S03C"/>
+			<site site="A00B05S03C"/>
+		</spatial>
+		<spatial name="A00B05T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B05S03C"/>
+			<site site="A00B06S03C"/>
+		</spatial>
+		<spatial name="A00B06T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B06S03C"/>
+			<site site="A00B07S03C"/>
+		</spatial>
+		<spatial name="A00B07T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B07S03C"/>
+			<site site="A00B08S03C"/>
+		</spatial>
+		<spatial name="A00B08T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B08S03C"/>
+			<site site="A00B09S03C"/>
+		</spatial>
+		<spatial name="A00B09T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B09S03C"/>
+			<site site="A00B10S03C"/>
+		</spatial>
+		<spatial name="A00B10T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B10S03C"/>
+			<site site="A00B11S03C"/>
+		</spatial>
+		<spatial name="A00B11T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B11S03C"/>
+			<site site="A00B12S03C"/>
+		</spatial>
+		<spatial name="A00B12T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B12S03C"/>
+			<site site="A00B13S03C"/>
+		</spatial>
+		<spatial name="A00B13T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B13S03C"/>
+			<site site="A00B14S03C"/>
+		</spatial>
+		<spatial name="A00B14T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B14S03C"/>
+			<site site="A01B00S03C"/>
+		</spatial>
+		<spatial name="A01B00T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S01C"/>
+			<site site="A01B01S01C"/>
+		</spatial>
+		<spatial name="A01B01T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B01S01C"/>
+			<site site="A01B02S01C"/>
+		</spatial>
+		<spatial name="A01B02T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B02S01C"/>
+			<site site="A01B03S01C"/>
+		</spatial>
+		<spatial name="A01B03T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B03S01C"/>
+			<site site="A01B04S01C"/>
+		</spatial>
+		<spatial name="A01B04T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B04S01C"/>
+			<site site="A01B05S01C"/>
+		</spatial>
+		<spatial name="A01B05T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B05S01C"/>
+			<site site="A01B06S01C"/>
+		</spatial>
+		<spatial name="A01B06T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B06S01C"/>
+			<site site="A01B07S01C"/>
+		</spatial>
+		<spatial name="A01B07T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B07S01C"/>
+			<site site="A01B08S01C"/>
+		</spatial>
+		<spatial name="A01B08T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B08S01C"/>
+			<site site="A01B09S01C"/>
+		</spatial>
+		<spatial name="A01B09T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B09S01C"/>
+			<site site="A01B10S01C"/>
+		</spatial>
+		<spatial name="A01B10T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B10S01C"/>
+			<site site="A01B11S01C"/>
+		</spatial>
+		<spatial name="A01B11T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B11S01C"/>
+			<site site="A01B12S01C"/>
+		</spatial>
+		<spatial name="A01B12T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B12S01C"/>
+			<site site="A01B13S01C"/>
+		</spatial>
+		<spatial name="A01B13T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B13S01C"/>
+			<site site="A01B14S01C"/>
+		</spatial>
+		<spatial name="A01B14T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B14S01C"/>
+			<site site="A02B00S01C"/>
+		</spatial>
+		<spatial name="A01B00T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S02C"/>
+			<site site="A01B01S02C"/>
+		</spatial>
+		<spatial name="A01B01T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B01S02C"/>
+			<site site="A01B02S02C"/>
+		</spatial>
+		<spatial name="A01B02T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B02S02C"/>
+			<site site="A01B03S02C"/>
+		</spatial>
+		<spatial name="A01B03T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B03S02C"/>
+			<site site="A01B04S02C"/>
+		</spatial>
+		<spatial name="A01B04T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B04S02C"/>
+			<site site="A01B05S02C"/>
+		</spatial>
+		<spatial name="A01B05T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B05S02C"/>
+			<site site="A01B06S02C"/>
+		</spatial>
+		<spatial name="A01B06T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B06S02C"/>
+			<site site="A01B07S02C"/>
+		</spatial>
+		<spatial name="A01B07T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B07S02C"/>
+			<site site="A01B08S02C"/>
+		</spatial>
+		<spatial name="A01B08T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B08S02C"/>
+			<site site="A01B09S02C"/>
+		</spatial>
+		<spatial name="A01B09T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B09S02C"/>
+			<site site="A01B10S02C"/>
+		</spatial>
+		<spatial name="A01B10T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B10S02C"/>
+			<site site="A01B11S02C"/>
+		</spatial>
+		<spatial name="A01B11T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B11S02C"/>
+			<site site="A01B12S02C"/>
+		</spatial>
+		<spatial name="A01B12T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B12S02C"/>
+			<site site="A01B13S02C"/>
+		</spatial>
+		<spatial name="A01B13T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B13S02C"/>
+			<site site="A01B14S02C"/>
+		</spatial>
+		<spatial name="A01B14T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B14S02C"/>
+			<site site="A02B00S02C"/>
+		</spatial>
+		<spatial name="A01B00T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S03C"/>
+			<site site="A01B01S03C"/>
+		</spatial>
+		<spatial name="A01B01T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B01S03C"/>
+			<site site="A01B02S03C"/>
+		</spatial>
+		<spatial name="A01B02T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B02S03C"/>
+			<site site="A01B03S03C"/>
+		</spatial>
+		<spatial name="A01B03T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B03S03C"/>
+			<site site="A01B04S03C"/>
+		</spatial>
+		<spatial name="A01B04T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B04S03C"/>
+			<site site="A01B05S03C"/>
+		</spatial>
+		<spatial name="A01B05T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B05S03C"/>
+			<site site="A01B06S03C"/>
+		</spatial>
+		<spatial name="A01B06T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B06S03C"/>
+			<site site="A01B07S03C"/>
+		</spatial>
+		<spatial name="A01B07T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B07S03C"/>
+			<site site="A01B08S03C"/>
+		</spatial>
+		<spatial name="A01B08T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B08S03C"/>
+			<site site="A01B09S03C"/>
+		</spatial>
+		<spatial name="A01B09T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B09S03C"/>
+			<site site="A01B10S03C"/>
+		</spatial>
+		<spatial name="A01B10T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B10S03C"/>
+			<site site="A01B11S03C"/>
+		</spatial>
+		<spatial name="A01B11T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B11S03C"/>
+			<site site="A01B12S03C"/>
+		</spatial>
+		<spatial name="A01B12T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B12S03C"/>
+			<site site="A01B13S03C"/>
+		</spatial>
+		<spatial name="A01B13T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B13S03C"/>
+			<site site="A01B14S03C"/>
+		</spatial>
+		<spatial name="A01B14T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B14S03C"/>
+			<site site="A02B00S03C"/>
+		</spatial>
+		<spatial name="A02B00T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S01C"/>
+			<site site="A02B01S01C"/>
+		</spatial>
+		<spatial name="A02B01T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B01S01C"/>
+			<site site="A02B02S01C"/>
+		</spatial>
+		<spatial name="A02B02T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B02S01C"/>
+			<site site="A02B03S01C"/>
+		</spatial>
+		<spatial name="A02B03T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B03S01C"/>
+			<site site="A02B04S01C"/>
+		</spatial>
+		<spatial name="A02B04T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B04S01C"/>
+			<site site="A02B05S01C"/>
+		</spatial>
+		<spatial name="A02B05T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B05S01C"/>
+			<site site="A02B06S01C"/>
+		</spatial>
+		<spatial name="A02B06T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B06S01C"/>
+			<site site="A02B07S01C"/>
+		</spatial>
+		<spatial name="A02B07T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B07S01C"/>
+			<site site="A02B08S01C"/>
+		</spatial>
+		<spatial name="A02B08T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B08S01C"/>
+			<site site="A02B09S01C"/>
+		</spatial>
+		<spatial name="A02B09T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B09S01C"/>
+			<site site="A02B10S01C"/>
+		</spatial>
+		<spatial name="A02B10T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B10S01C"/>
+			<site site="A02B11S01C"/>
+		</spatial>
+		<spatial name="A02B11T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B11S01C"/>
+			<site site="A02B12S01C"/>
+		</spatial>
+		<spatial name="A02B12T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B12S01C"/>
+			<site site="A02B13S01C"/>
+		</spatial>
+		<spatial name="A02B13T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B13S01C"/>
+			<site site="A02B14S01C"/>
+		</spatial>
+		<spatial name="A02B14T01" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B14S01C"/>
+			<site site="A02B15S01C"/>
+		</spatial>
+		<spatial name="A02B00T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S02C"/>
+			<site site="A02B01S02C"/>
+		</spatial>
+		<spatial name="A02B01T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B01S02C"/>
+			<site site="A02B02S02C"/>
+		</spatial>
+		<spatial name="A02B02T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B02S02C"/>
+			<site site="A02B03S02C"/>
+		</spatial>
+		<spatial name="A02B03T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B03S02C"/>
+			<site site="A02B04S02C"/>
+		</spatial>
+		<spatial name="A02B04T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B04S02C"/>
+			<site site="A02B05S02C"/>
+		</spatial>
+		<spatial name="A02B05T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B05S02C"/>
+			<site site="A02B06S02C"/>
+		</spatial>
+		<spatial name="A02B06T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B06S02C"/>
+			<site site="A02B07S02C"/>
+		</spatial>
+		<spatial name="A02B07T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B07S02C"/>
+			<site site="A02B08S02C"/>
+		</spatial>
+		<spatial name="A02B08T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B08S02C"/>
+			<site site="A02B09S02C"/>
+		</spatial>
+		<spatial name="A02B09T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B09S02C"/>
+			<site site="A02B10S02C"/>
+		</spatial>
+		<spatial name="A02B10T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B10S02C"/>
+			<site site="A02B11S02C"/>
+		</spatial>
+		<spatial name="A02B11T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B11S02C"/>
+			<site site="A02B12S02C"/>
+		</spatial>
+		<spatial name="A02B12T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B12S02C"/>
+			<site site="A02B13S02C"/>
+		</spatial>
+		<spatial name="A02B13T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B13S02C"/>
+			<site site="A02B14S02C"/>
+		</spatial>
+		<spatial name="A02B14T02" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B14S02C"/>
+			<site site="A02B15S02C"/>
+		</spatial>
+		<spatial name="A02B00T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S03C"/>
+			<site site="A02B01S03C"/>
+		</spatial>
+		<spatial name="A02B01T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B01S03C"/>
+			<site site="A02B02S03C"/>
+		</spatial>
+		<spatial name="A02B02T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B02S03C"/>
+			<site site="A02B03S03C"/>
+		</spatial>
+		<spatial name="A02B03T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B03S03C"/>
+			<site site="A02B04S03C"/>
+		</spatial>
+		<spatial name="A02B04T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B04S03C"/>
+			<site site="A02B05S03C"/>
+		</spatial>
+		<spatial name="A02B05T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B05S03C"/>
+			<site site="A02B06S03C"/>
+		</spatial>
+		<spatial name="A02B06T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B06S03C"/>
+			<site site="A02B07S03C"/>
+		</spatial>
+		<spatial name="A02B07T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B07S03C"/>
+			<site site="A02B08S03C"/>
+		</spatial>
+		<spatial name="A02B08T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B08S03C"/>
+			<site site="A02B09S03C"/>
+		</spatial>
+		<spatial name="A02B09T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B09S03C"/>
+			<site site="A02B10S03C"/>
+		</spatial>
+		<spatial name="A02B10T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B10S03C"/>
+			<site site="A02B11S03C"/>
+		</spatial>
+		<spatial name="A02B11T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B11S03C"/>
+			<site site="A02B12S03C"/>
+		</spatial>
+		<spatial name="A02B12T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B12S03C"/>
+			<site site="A02B13S03C"/>
+		</spatial>
+		<spatial name="A02B13T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B13S03C"/>
+			<site site="A02B14S03C"/>
+		</spatial>
+		<spatial name="A02B14T03" stiffness="0" damping="1500000.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B14S03C"/>
+			<site site="A02B15S03C"/>
+		</spatial>
+		<spatial name="A00B00T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S01C"/>
+			<site site="A00B01S01C"/>
+		</spatial>
+		<spatial name="A00B01T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B01S01C"/>
+			<site site="A00B02S01C"/>
+		</spatial>
+		<spatial name="A00B02T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B02S01C"/>
+			<site site="A00B03S01C"/>
+		</spatial>
+		<spatial name="A00B03T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B03S01C"/>
+			<site site="A00B04S01C"/>
+		</spatial>
+		<spatial name="A00B04T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B04S01C"/>
+			<site site="A00B05S01C"/>
+		</spatial>
+		<spatial name="A00B05T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B05S01C"/>
+			<site site="A00B06S01C"/>
+		</spatial>
+		<spatial name="A00B06T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B06S01C"/>
+			<site site="A00B07S01C"/>
+		</spatial>
+		<spatial name="A00B07T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B07S01C"/>
+			<site site="A00B08S01C"/>
+		</spatial>
+		<spatial name="A00B08T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B08S01C"/>
+			<site site="A00B09S01C"/>
+		</spatial>
+		<spatial name="A00B09T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B09S01C"/>
+			<site site="A00B10S01C"/>
+		</spatial>
+		<spatial name="A00B10T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B10S01C"/>
+			<site site="A00B11S01C"/>
+		</spatial>
+		<spatial name="A00B11T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B11S01C"/>
+			<site site="A00B12S01C"/>
+		</spatial>
+		<spatial name="A00B12T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B12S01C"/>
+			<site site="A00B13S01C"/>
+		</spatial>
+		<spatial name="A00B13T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B13S01C"/>
+			<site site="A00B14S01C"/>
+		</spatial>
+		<spatial name="A00B14T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B14S01C"/>
+			<site site="A01B00S01C"/>
+		</spatial>
+		<spatial name="A00B00T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S02C"/>
+			<site site="A00B01S02C"/>
+		</spatial>
+		<spatial name="A00B01T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B01S02C"/>
+			<site site="A00B02S02C"/>
+		</spatial>
+		<spatial name="A00B02T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B02S02C"/>
+			<site site="A00B03S02C"/>
+		</spatial>
+		<spatial name="A00B03T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B03S02C"/>
+			<site site="A00B04S02C"/>
+		</spatial>
+		<spatial name="A00B04T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B04S02C"/>
+			<site site="A00B05S02C"/>
+		</spatial>
+		<spatial name="A00B05T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B05S02C"/>
+			<site site="A00B06S02C"/>
+		</spatial>
+		<spatial name="A00B06T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B06S02C"/>
+			<site site="A00B07S02C"/>
+		</spatial>
+		<spatial name="A00B07T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B07S02C"/>
+			<site site="A00B08S02C"/>
+		</spatial>
+		<spatial name="A00B08T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B08S02C"/>
+			<site site="A00B09S02C"/>
+		</spatial>
+		<spatial name="A00B09T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B09S02C"/>
+			<site site="A00B10S02C"/>
+		</spatial>
+		<spatial name="A00B10T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B10S02C"/>
+			<site site="A00B11S02C"/>
+		</spatial>
+		<spatial name="A00B11T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B11S02C"/>
+			<site site="A00B12S02C"/>
+		</spatial>
+		<spatial name="A00B12T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B12S02C"/>
+			<site site="A00B13S02C"/>
+		</spatial>
+		<spatial name="A00B13T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B13S02C"/>
+			<site site="A00B14S02C"/>
+		</spatial>
+		<spatial name="A00B14T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B14S02C"/>
+			<site site="A01B00S02C"/>
+		</spatial>
+		<spatial name="A00B00T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S03C"/>
+			<site site="A00B01S03C"/>
+		</spatial>
+		<spatial name="A00B01T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B01S03C"/>
+			<site site="A00B02S03C"/>
+		</spatial>
+		<spatial name="A00B02T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B02S03C"/>
+			<site site="A00B03S03C"/>
+		</spatial>
+		<spatial name="A00B03T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B03S03C"/>
+			<site site="A00B04S03C"/>
+		</spatial>
+		<spatial name="A00B04T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B04S03C"/>
+			<site site="A00B05S03C"/>
+		</spatial>
+		<spatial name="A00B05T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B05S03C"/>
+			<site site="A00B06S03C"/>
+		</spatial>
+		<spatial name="A00B06T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B06S03C"/>
+			<site site="A00B07S03C"/>
+		</spatial>
+		<spatial name="A00B07T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B07S03C"/>
+			<site site="A00B08S03C"/>
+		</spatial>
+		<spatial name="A00B08T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B08S03C"/>
+			<site site="A00B09S03C"/>
+		</spatial>
+		<spatial name="A00B09T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B09S03C"/>
+			<site site="A00B10S03C"/>
+		</spatial>
+		<spatial name="A00B10T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B10S03C"/>
+			<site site="A00B11S03C"/>
+		</spatial>
+		<spatial name="A00B11T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B11S03C"/>
+			<site site="A00B12S03C"/>
+		</spatial>
+		<spatial name="A00B12T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B12S03C"/>
+			<site site="A00B13S03C"/>
+		</spatial>
+		<spatial name="A00B13T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B13S03C"/>
+			<site site="A00B14S03C"/>
+		</spatial>
+		<spatial name="A00B14T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.0 0.0 1">
+			<site site="A00B14S03C"/>
+			<site site="A01B00S03C"/>
+		</spatial>
+		<spatial name="A01B00T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S01C"/>
+			<site site="A01B01S01C"/>
+		</spatial>
+		<spatial name="A01B01T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B01S01C"/>
+			<site site="A01B02S01C"/>
+		</spatial>
+		<spatial name="A01B02T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B02S01C"/>
+			<site site="A01B03S01C"/>
+		</spatial>
+		<spatial name="A01B03T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B03S01C"/>
+			<site site="A01B04S01C"/>
+		</spatial>
+		<spatial name="A01B04T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B04S01C"/>
+			<site site="A01B05S01C"/>
+		</spatial>
+		<spatial name="A01B05T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B05S01C"/>
+			<site site="A01B06S01C"/>
+		</spatial>
+		<spatial name="A01B06T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B06S01C"/>
+			<site site="A01B07S01C"/>
+		</spatial>
+		<spatial name="A01B07T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B07S01C"/>
+			<site site="A01B08S01C"/>
+		</spatial>
+		<spatial name="A01B08T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B08S01C"/>
+			<site site="A01B09S01C"/>
+		</spatial>
+		<spatial name="A01B09T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B09S01C"/>
+			<site site="A01B10S01C"/>
+		</spatial>
+		<spatial name="A01B10T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B10S01C"/>
+			<site site="A01B11S01C"/>
+		</spatial>
+		<spatial name="A01B11T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B11S01C"/>
+			<site site="A01B12S01C"/>
+		</spatial>
+		<spatial name="A01B12T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B12S01C"/>
+			<site site="A01B13S01C"/>
+		</spatial>
+		<spatial name="A01B13T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B13S01C"/>
+			<site site="A01B14S01C"/>
+		</spatial>
+		<spatial name="A01B14T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B14S01C"/>
+			<site site="A02B00S01C"/>
+		</spatial>
+		<spatial name="A01B00T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S02C"/>
+			<site site="A01B01S02C"/>
+		</spatial>
+		<spatial name="A01B01T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B01S02C"/>
+			<site site="A01B02S02C"/>
+		</spatial>
+		<spatial name="A01B02T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B02S02C"/>
+			<site site="A01B03S02C"/>
+		</spatial>
+		<spatial name="A01B03T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B03S02C"/>
+			<site site="A01B04S02C"/>
+		</spatial>
+		<spatial name="A01B04T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B04S02C"/>
+			<site site="A01B05S02C"/>
+		</spatial>
+		<spatial name="A01B05T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B05S02C"/>
+			<site site="A01B06S02C"/>
+		</spatial>
+		<spatial name="A01B06T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B06S02C"/>
+			<site site="A01B07S02C"/>
+		</spatial>
+		<spatial name="A01B07T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B07S02C"/>
+			<site site="A01B08S02C"/>
+		</spatial>
+		<spatial name="A01B08T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B08S02C"/>
+			<site site="A01B09S02C"/>
+		</spatial>
+		<spatial name="A01B09T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B09S02C"/>
+			<site site="A01B10S02C"/>
+		</spatial>
+		<spatial name="A01B10T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B10S02C"/>
+			<site site="A01B11S02C"/>
+		</spatial>
+		<spatial name="A01B11T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B11S02C"/>
+			<site site="A01B12S02C"/>
+		</spatial>
+		<spatial name="A01B12T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B12S02C"/>
+			<site site="A01B13S02C"/>
+		</spatial>
+		<spatial name="A01B13T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B13S02C"/>
+			<site site="A01B14S02C"/>
+		</spatial>
+		<spatial name="A01B14T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B14S02C"/>
+			<site site="A02B00S02C"/>
+		</spatial>
+		<spatial name="A01B00T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S03C"/>
+			<site site="A01B01S03C"/>
+		</spatial>
+		<spatial name="A01B01T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B01S03C"/>
+			<site site="A01B02S03C"/>
+		</spatial>
+		<spatial name="A01B02T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B02S03C"/>
+			<site site="A01B03S03C"/>
+		</spatial>
+		<spatial name="A01B03T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B03S03C"/>
+			<site site="A01B04S03C"/>
+		</spatial>
+		<spatial name="A01B04T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B04S03C"/>
+			<site site="A01B05S03C"/>
+		</spatial>
+		<spatial name="A01B05T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B05S03C"/>
+			<site site="A01B06S03C"/>
+		</spatial>
+		<spatial name="A01B06T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B06S03C"/>
+			<site site="A01B07S03C"/>
+		</spatial>
+		<spatial name="A01B07T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B07S03C"/>
+			<site site="A01B08S03C"/>
+		</spatial>
+		<spatial name="A01B08T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B08S03C"/>
+			<site site="A01B09S03C"/>
+		</spatial>
+		<spatial name="A01B09T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B09S03C"/>
+			<site site="A01B10S03C"/>
+		</spatial>
+		<spatial name="A01B10T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B10S03C"/>
+			<site site="A01B11S03C"/>
+		</spatial>
+		<spatial name="A01B11T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B11S03C"/>
+			<site site="A01B12S03C"/>
+		</spatial>
+		<spatial name="A01B12T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B12S03C"/>
+			<site site="A01B13S03C"/>
+		</spatial>
+		<spatial name="A01B13T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B13S03C"/>
+			<site site="A01B14S03C"/>
+		</spatial>
+		<spatial name="A01B14T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.6 0.6 0.6 1">
+			<site site="A01B14S03C"/>
+			<site site="A02B00S03C"/>
+		</spatial>
+		<spatial name="A02B00T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S01C"/>
+			<site site="A02B01S01C"/>
+		</spatial>
+		<spatial name="A02B01T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B01S01C"/>
+			<site site="A02B02S01C"/>
+		</spatial>
+		<spatial name="A02B02T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B02S01C"/>
+			<site site="A02B03S01C"/>
+		</spatial>
+		<spatial name="A02B03T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B03S01C"/>
+			<site site="A02B04S01C"/>
+		</spatial>
+		<spatial name="A02B04T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B04S01C"/>
+			<site site="A02B05S01C"/>
+		</spatial>
+		<spatial name="A02B05T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B05S01C"/>
+			<site site="A02B06S01C"/>
+		</spatial>
+		<spatial name="A02B06T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B06S01C"/>
+			<site site="A02B07S01C"/>
+		</spatial>
+		<spatial name="A02B07T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B07S01C"/>
+			<site site="A02B08S01C"/>
+		</spatial>
+		<spatial name="A02B08T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B08S01C"/>
+			<site site="A02B09S01C"/>
+		</spatial>
+		<spatial name="A02B09T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B09S01C"/>
+			<site site="A02B10S01C"/>
+		</spatial>
+		<spatial name="A02B10T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B10S01C"/>
+			<site site="A02B11S01C"/>
+		</spatial>
+		<spatial name="A02B11T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B11S01C"/>
+			<site site="A02B12S01C"/>
+		</spatial>
+		<spatial name="A02B12T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B12S01C"/>
+			<site site="A02B13S01C"/>
+		</spatial>
+		<spatial name="A02B13T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B13S01C"/>
+			<site site="A02B14S01C"/>
+		</spatial>
+		<spatial name="A02B14T01_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B14S01C"/>
+			<site site="A02B15S01C"/>
+		</spatial>
+		<spatial name="A02B00T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S02C"/>
+			<site site="A02B01S02C"/>
+		</spatial>
+		<spatial name="A02B01T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B01S02C"/>
+			<site site="A02B02S02C"/>
+		</spatial>
+		<spatial name="A02B02T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B02S02C"/>
+			<site site="A02B03S02C"/>
+		</spatial>
+		<spatial name="A02B03T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B03S02C"/>
+			<site site="A02B04S02C"/>
+		</spatial>
+		<spatial name="A02B04T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B04S02C"/>
+			<site site="A02B05S02C"/>
+		</spatial>
+		<spatial name="A02B05T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B05S02C"/>
+			<site site="A02B06S02C"/>
+		</spatial>
+		<spatial name="A02B06T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B06S02C"/>
+			<site site="A02B07S02C"/>
+		</spatial>
+		<spatial name="A02B07T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B07S02C"/>
+			<site site="A02B08S02C"/>
+		</spatial>
+		<spatial name="A02B08T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B08S02C"/>
+			<site site="A02B09S02C"/>
+		</spatial>
+		<spatial name="A02B09T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B09S02C"/>
+			<site site="A02B10S02C"/>
+		</spatial>
+		<spatial name="A02B10T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B10S02C"/>
+			<site site="A02B11S02C"/>
+		</spatial>
+		<spatial name="A02B11T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B11S02C"/>
+			<site site="A02B12S02C"/>
+		</spatial>
+		<spatial name="A02B12T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B12S02C"/>
+			<site site="A02B13S02C"/>
+		</spatial>
+		<spatial name="A02B13T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B13S02C"/>
+			<site site="A02B14S02C"/>
+		</spatial>
+		<spatial name="A02B14T02_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B14S02C"/>
+			<site site="A02B15S02C"/>
+		</spatial>
+		<spatial name="A02B00T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S03C"/>
+			<site site="A02B01S03C"/>
+		</spatial>
+		<spatial name="A02B01T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B01S03C"/>
+			<site site="A02B02S03C"/>
+		</spatial>
+		<spatial name="A02B02T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B02S03C"/>
+			<site site="A02B03S03C"/>
+		</spatial>
+		<spatial name="A02B03T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B03S03C"/>
+			<site site="A02B04S03C"/>
+		</spatial>
+		<spatial name="A02B04T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B04S03C"/>
+			<site site="A02B05S03C"/>
+		</spatial>
+		<spatial name="A02B05T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B05S03C"/>
+			<site site="A02B06S03C"/>
+		</spatial>
+		<spatial name="A02B06T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B06S03C"/>
+			<site site="A02B07S03C"/>
+		</spatial>
+		<spatial name="A02B07T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B07S03C"/>
+			<site site="A02B08S03C"/>
+		</spatial>
+		<spatial name="A02B08T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B08S03C"/>
+			<site site="A02B09S03C"/>
+		</spatial>
+		<spatial name="A02B09T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B09S03C"/>
+			<site site="A02B10S03C"/>
+		</spatial>
+		<spatial name="A02B10T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B10S03C"/>
+			<site site="A02B11S03C"/>
+		</spatial>
+		<spatial name="A02B11T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B11S03C"/>
+			<site site="A02B12S03C"/>
+		</spatial>
+		<spatial name="A02B12T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B12S03C"/>
+			<site site="A02B13S03C"/>
+		</spatial>
+		<spatial name="A02B13T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B13S03C"/>
+			<site site="A02B14S03C"/>
+		</spatial>
+		<spatial name="A02B14T03_" stiffness="15000000.0" damping="0.0" width="0.001" rgba="0.0 0.0 0.6 1">
+			<site site="A02B14S03C"/>
+			<site site="A02B15S03C"/>
+		</spatial>
+		<spatial name="T0" stiffness="0" damping="0" width="0.01" rgba="0.6 0.0 0.0 1">
+			<site site="A00B00S00C"/>
+			<site site="A00B01S00C"/>
+			<site site="A00B02S00C"/>
+			<site site="A00B03S00C"/>
+			<site site="A00B04S00C"/>
+			<site site="A00B05S00C"/>
+			<site site="A00B06S00C"/>
+			<site site="A00B07S00C"/>
+			<site site="A00B08S00C"/>
+			<site site="A00B09S00C"/>
+			<site site="A00B10S00C"/>
+			<site site="A00B11S00C"/>
+			<site site="A00B12S00C"/>
+			<site site="A00B13S00C"/>
+			<site site="A00B14S00C"/>
+			<site site="A01B00S00C"/>
+		</spatial>
+		<spatial name="T1" stiffness="0" damping="0" width="0.01" rgba="0.6 0.6 0.6 1">
+			<site site="A01B00S00C"/>
+			<site site="A01B01S00C"/>
+			<site site="A01B02S00C"/>
+			<site site="A01B03S00C"/>
+			<site site="A01B04S00C"/>
+			<site site="A01B05S00C"/>
+			<site site="A01B06S00C"/>
+			<site site="A01B07S00C"/>
+			<site site="A01B08S00C"/>
+			<site site="A01B09S00C"/>
+			<site site="A01B10S00C"/>
+			<site site="A01B11S00C"/>
+			<site site="A01B12S00C"/>
+			<site site="A01B13S00C"/>
+			<site site="A01B14S00C"/>
+			<site site="A02B00S00C"/>
+		</spatial>
+		<spatial name="T2" stiffness="0" damping="0" width="0.01" rgba="0.0 0.0 0.6 1">
+			<site site="A02B00S00C"/>
+			<site site="A02B01S00C"/>
+			<site site="A02B02S00C"/>
+			<site site="A02B03S00C"/>
+			<site site="A02B04S00C"/>
+			<site site="A02B05S00C"/>
+			<site site="A02B06S00C"/>
+			<site site="A02B07S00C"/>
+			<site site="A02B08S00C"/>
+			<site site="A02B09S00C"/>
+			<site site="A02B10S00C"/>
+			<site site="A02B11S00C"/>
+			<site site="A02B12S00C"/>
+			<site site="A02B13S00C"/>
+			<site site="A02B14S00C"/>
+			<site site="A02B15S00C"/>
+		</spatial>
+	</tendon>
+	<actuator>
+		<general tendon="T0" ctrllimited="true" ctrlrange="0 1" gear="100000.0"/>
+		<general tendon="T1" ctrllimited="true" ctrlrange="0 1" gear="100000.0"/>
+		<general tendon="T2" ctrllimited="true" ctrlrange="0 1" gear="100000.0"/>
+	</actuator>
+</mujoco>
