@@ -40,7 +40,7 @@ def generateXML(config, nSprings=3):
     '''
     tend = ET.SubElement(root, 'tendon')
     for kk in range(config['numSegments']):
-        r_ = 2*kk/(config['numSegments']-1)
+        r_ = 2*kk/(config['numSegments']-1) if config['numSegments'] > 1 else 0 
         for ii in range(1, nSprings + 1):
             for jj in range(config['numDisks'] - 1):
                 isLast = (jj==config['numDisks']-2) * (kk != config['numSegments']-1)
@@ -49,7 +49,7 @@ def generateXML(config, nSprings=3):
                 ET.SubElement(sc, 'site', site='A{:02d}B{:02d}S{:02d}C'.format(kk + isLast, (jj + 1) % (config['numDisks'] - isLast), ii))
 
     for kk in range(config['numSegments']):
-        r_ = 2*kk/(config['numSegments']-1)
+        r_ = 2*kk/(config['numSegments']-1) if config['numSegments'] > 1 else 0
         for ii in range(1, nSprings + 1):
             for jj in range(config['numDisks'] - 1):
                 isLast = (jj==config['numDisks']-2) * (kk != config['numSegments']-1)
@@ -59,7 +59,7 @@ def generateXML(config, nSprings=3):
                 ET.SubElement(sc, 'site', site='A{:02d}B{:02d}S{:02d}C'.format(kk + isLast, (jj + 1) % (config['numDisks'] - isLast), ii))
 
     for kk in range(config['numSegments']):
-        r_ = 2*kk/(config['numSegments']-1)
+        r_ = 2*kk/(config['numSegments']-1) if config['numSegments'] > 1 else 0
         sc = ET.SubElement(tend, 'spatial', name='T{}'.format(kk), stiffness='0', damping='0', width='0.01', rgba='{} {} {} 1'.format(0.6*min(2 - r_, 1)**2, 0.6*min(2 - r_, r_)**2, 0.6*min(r_, 1)**2))
         for jj in range(config['numDisks']):
             isLast = (jj==config['numDisks']-1) * (kk != config['numSegments']-1)
